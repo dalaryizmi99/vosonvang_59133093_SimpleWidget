@@ -15,7 +15,7 @@
         android:text="Tên của bạn:" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -29,7 +29,7 @@
         android:text="Ngày Sinh:" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editNgaySinh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -106,7 +106,7 @@
         android:text="Sở thích khác" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editSTK"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -114,7 +114,7 @@
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
