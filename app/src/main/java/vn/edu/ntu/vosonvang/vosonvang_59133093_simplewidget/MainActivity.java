@@ -53,25 +53,25 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void confirmInfo(){
-        returnInfo = editTen.getText().toString() + "\n"
+        returnInfo = "Tên: " + editTen.getText().toString() + "\n"
                 + "Ngày sinh: " + editNgaySinh.getText().toString() + "\n" + "Giới tính: ";
         if ( rdgGioiTinh.getCheckedRadioButtonId() == R.id.rbNam)
-                    returnInfo = returnInfo + "Nam" + "\n" + "Sở thích: ";
+            returnInfo += "Nam" + "\n" + "Sở thích: ";
         else
             if (rdgGioiTinh.getCheckedRadioButtonId() == R.id.rbNu)
-                        returnInfo = returnInfo + "Nữ" + "\n" +  "Sở Thích: ";
+                returnInfo += "Nữ" + "\n" +  "Sở Thích: ";
         if (cb1.isChecked())
-            returnInfo = returnInfo + "Xem phim; ";
+            returnInfo += "Xem phim; ";
         if (cb2.isChecked())
-            returnInfo = returnInfo + "Nghe nhạc; ";
+            returnInfo += "Nghe nhạc; ";
         if (cb3.isChecked())
-            returnInfo = returnInfo + "Đi cafe với bạn bè; ";
+            returnInfo += "Đi cafe với bạn bè; ";
         if (cb4.isChecked())
-            returnInfo = returnInfo + "Ở nhà một mình; ";
+            returnInfo += "Ở nhà một mình; ";
         if (cb5.isChecked())
-            returnInfo = returnInfo + "Vào bếp nấu ăn; ";
+            returnInfo += "Vào bếp nấu ăn; ";
 
-        returnInfo = returnInfo + editSTK.getText().toString();
+        returnInfo += editSTK.getText().toString();
 
         Toast.makeText(getApplicationContext(), returnInfo, Toast.LENGTH_SHORT).show();
     }
